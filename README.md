@@ -12,11 +12,17 @@ Project Objectives
 
 Platform Features
 User-Friendly Dashboard: A central hub for users to track tenders, view alerts, and manage submissions.
+
 Customizable Filters: Advanced search options allowing users to filter tenders based on industry, location, deadlines, and other parameters.
+
 Notifications & Alerts: Automated email alerts for new tenders, deadlines, and updates, with customizable settings.
+
 Analytics Dashboard: Data visualizations and insights on tender competition, win rates, and sector trends.
+
 Bid Submission & Tracking: Simple and intuitive forms to upload bid proposals and track the status of submissions.
+
 Sharing and Comments: Allow users to share tenders via email or social media platforms and collaborate through comment threads on specific tenders.
+
 Security & Compliance: Secure logins, encrypted data storage, and compliance with local and international tendering regulations.
 
 User Roles and Permissions
@@ -38,3 +44,74 @@ Deployment: Cloud-based with auto-scaling capabilities
 
 Conclusion
 This tendering platform is designed to revolutionize how businesses access, bid for, and win tenders, offering a seamless experience backed by advanced analytics and secure processes. By connecting businesses with government and private sector opportunities, the platform helps users maximize their chances of success in an increasingly competitive market.
+
+
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/your-username/tendering-platform.git
+Navigate into the project directory:
+
+bash
+Copy code
+cd tendering-platform
+Set up the virtual environment:
+
+bash
+Copy code
+python3 -m venv venv
+source venv/bin/activate
+Install the dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Install frontend dependencies:
+
+bash
+Copy code
+cd client
+npm install
+Configuration
+Backend Configuration:
+
+Set up environment variables:
+DATABASE_URL: Database connection string.
+SENDGRID_API_KEY: API key for email notifications.
+SECRET_KEY: Secret key for session management.
+Update config.py with the appropriate credentials for database and email services.
+Frontend Configuration:
+
+Set up API URL and environment variables in the frontend environment file .env.
+Usage
+Run the Backend:
+
+bash
+Copy code
+flask run
+Run the Frontend:
+
+bash
+Copy code
+cd client
+npm start
+Access the Application: Open http://localhost:3000 in your browser to start using the platform.
+
+Contributing
+Contributions are welcome! To get started:
+
+Fork this repository.
+Create a new branch:
+bash
+Copy code
+git checkout -b feature/your-feature
+Commit your changes:
+bash
+Copy code
+git commit -m 'Add some feature'
+Push to the branch:
+bash
+Copy code
+git push origin feature/your-feature
